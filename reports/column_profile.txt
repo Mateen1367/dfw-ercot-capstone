@@ -1,0 +1,27 @@
+
+CLEAN v2 PROFILE
+rows: 63478   UTC 5/27/2019 6:00:00 AM -> 8/23/2026 3:00:00 AM   gap(imputed) hours: 0 (0.00%)
+
+column                                n missing         min         max        mean         std    neg   zero
+-------------------------------------------------------------------------------------------------------------------
+generation_ng_mwh                 63454      24         411      51,156      21,640       9,379      0      0
+generation_col_mwh                63454      24       1,933      13,907       7,692       2,337      0      0
+generation_nuc_mwh                63453      25       2,442       5,157       4,683         631      0      0
+generation_oth_mwh                63342     136          -8      27,137         123         758      2   1194
+generation_sun_mwh                63450      28           0      34,982       3,971       6,685      0  22800
+generation_wat_mwh                63448      30           0         344          50          59      0  11216
+generation_wnd_mwh                63454      24          38      28,819      11,840       6,389      0      0
+demand_coas_mwh                   63346     132       4,935      23,802      13,397       3,008      0      0
+demand_east_mwh                   63381      97         829       4,800       1,779         436      0      0
+demand_fwes_mwh                   63343     135       1,087       9,462       5,459       1,605      0      0
+demand_ncen_mwh                   63351     127       7,439      29,839      14,538       4,010      0      0
+demand_nrth_mwh                   63378     100         300       3,066       1,397         467      0      0
+demand_scen_mwh                   63382      96       3,924      16,012       8,127       2,197      0      0
+demand_sout_mwh                   63382      96       1,860       7,209       4,006         973      0      0
+demand_west_mwh                   63382      96         400       4,000       1,438         333      0      0
+interchange_cen_mwh               63372     106        -409         412          34          98  18505  17757
+net_generation_mwh                63454      24      27,450      91,117      49,955      11,437      0      0
+total_interchange_mwh             63372     106      -1,197       1,162         -98         315  37714   1633
+demand_mwh                        63477       1      27,449      91,075      50,054      11,473      0      0
+interchange_swpp_mwh              63372     106        -818         837        -132         303  40155   4584
+day_ahead_demand_forecast_mwh     63382      96      27,872      91,660      50,297      11,708      0      0

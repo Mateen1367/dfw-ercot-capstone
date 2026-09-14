@@ -1,0 +1,22 @@
+column_name,series_id,description,units,frequency,start_utc,end_utc,counterparty,data_type,fuel,observation_count
+generation_ng_mwh,EBA.ERCO-ALL.NG.NG.H,Net generation from natural gas (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,NG,66989
+generation_col_mwh,EBA.ERCO-ALL.NG.COL.H,Net generation from coal (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,COL,66989
+generation_nuc_mwh,EBA.ERCO-ALL.NG.NUC.H,Net generation from nuclear (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,NUC,66988
+generation_oth_mwh,EBA.ERCO-ALL.NG.OTH.H,Net generation from other (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,OTH,66877
+generation_sun_mwh,EBA.ERCO-ALL.NG.SUN.H,Net generation from solar (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,SUN,66985
+generation_wat_mwh,EBA.ERCO-ALL.NG.WAT.H,Net generation from hydro (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,WAT,66983
+generation_wnd_mwh,EBA.ERCO-ALL.NG.WND.H,Net generation from wind (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,WND,66989
+demand_coas_mwh,EBA.ERCO-COAS.D.H,Demand - Coast weather zone (Houston/Galveston),MWh,H,20190527T06,20260823T05,COAS,D,,63348
+demand_east_mwh,EBA.ERCO-EAST.D.H,Demand - East weather zone (Tyler/Longview),MWh,H,20190527T06,20260823T05,EAST,D,,63383
+demand_fwes_mwh,EBA.ERCO-FWES.D.H,Demand - Far West weather zone (Permian Basin/Midland-Odessa),MWh,H,20190527T06,20260823T04,FWES,D,,63344
+demand_ncen_mwh,EBA.ERCO-NCEN.D.H,Demand - North Central weather zone (Dallas-Fort Worth metroplex),MWh,H,20190527T06,20260823T05,NCEN,D,,63353
+demand_nrth_mwh,EBA.ERCO-NRTH.D.H,Demand - North weather zone (Wichita Falls),MWh,H,20190527T06,20260823T05,NRTH,D,,63380
+demand_scen_mwh,EBA.ERCO-SCEN.D.H,Demand - South Central weather zone (Austin/San Antonio),MWh,H,20190527T06,20260823T05,SCEN,D,,63384
+demand_sout_mwh,EBA.ERCO-SOUT.D.H,Demand - South weather zone (Corpus Christi/Rio Grande Valley),MWh,H,20190527T06,20260823T05,SOUT,D,,63384
+demand_west_mwh,EBA.ERCO-WEST.D.H,Demand - West weather zone (Abilene/San Angelo),MWh,H,20190527T06,20260823T05,WEST,D,,63384
+interchange_cen_mwh,EBA.ERCO-CEN.ID.H,Actual net interchange ERCOT <-> CFE/CENACE Mexico (CEN),MWh,H,20190101T00,20260823T05,CEN,ID,,66883
+net_generation_mwh,EBA.ERCO-ALL.NG.H,Net generation total (ERCOT),MWh,H,20190101T00,20260824T04,ALL,NG,,66989
+total_interchange_mwh,EBA.ERCO-ALL.TI.H,Total net interchange (ERCOT; + = export),MWh,H,20190101T00,20260824T04,ALL,TI,,66906
+demand_mwh,EBA.ERCO-ALL.D.H,Demand total (ERCOT),MWh,H,20190101T00,20260824T18,ALL,D,,67026
+interchange_swpp_mwh,EBA.ERCO-SWPP.ID.H,Actual net interchange ERCOT <-> Southwest Power Pool (SWPP),MWh,H,20190101T00,20260823T05,SWPP,ID,,66883
+day_ahead_demand_forecast_mwh,EBA.ERCO-ALL.DF.H,Day-ahead demand forecast (ERCOT),MWh,H,20190101T00,20260825T05,ALL,DF,,66942
