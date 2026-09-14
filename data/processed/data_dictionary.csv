@@ -1,0 +1,38 @@
+technical_column_name,plain_english_name,category,description,typical_range_or_values,percent_missing
+timestamp_utc,Timestamp (UTC),Time,"The hour this row describes, in Coordinated Universal Time.",2019-05-27 06:00:00+00:00 to 2026-08-23 03:00:00+00:00,0.0
+generation_ng_mwh,Natural Gas Generation (MWh),Generation (Supply),Electricity produced by natural-gas power plants across ERCOT this hour.,"411 to 51,156  (avg 21,640.1)",0.04
+generation_col_mwh,Coal Generation (MWh),Generation (Supply),Electricity produced by coal power plants across ERCOT this hour.,"1,933 to 13,907  (avg 7,692.2)",0.04
+generation_nuc_mwh,Nuclear Generation (MWh),Generation (Supply),Electricity produced by ERCOT's two nuclear plants (Comanche Peak and South Texas Project) this hour.,"2,442 to 5,157  (avg 4,683.4)",0.04
+generation_oth_mwh,Other Generation (MWh),Generation (Supply),"Electricity from smaller sources not broken out separately (biomass, landfill gas, etc.).","-8 to 27,137  (avg 123.2)",0.21
+generation_sun_mwh,Solar Generation (MWh),Generation (Supply),Electricity produced by solar farms across ERCOT this hour. Always 0 at night.,"0 to 34,982  (avg 3,970.8)",0.04
+generation_wat_mwh,Hydro (Water) Generation (MWh),Generation (Supply),Electricity produced by hydroelectric plants. Very small in Texas.,0 to 344  (avg 50.5),0.05
+generation_wnd_mwh,Wind Generation (MWh),Generation (Supply),Electricity produced by wind farms across ERCOT this hour.,"38 to 28,819  (avg 11,839.7)",0.04
+demand_coas_mwh,Demand - Coast Region / Houston Area (MWh),Demand (Consumption),Electricity used in the Coast weather zone (greater Houston).,"4,935 to 23,802  (avg 13,396.7)",0.21
+demand_east_mwh,Demand - East Texas Region (MWh),Demand (Consumption),Electricity used in the East weather zone (Tyler / Longview area).,"829 to 4,800  (avg 1,778.8)",0.15
+demand_fwes_mwh,Demand - Far West Region / Permian Basin (MWh),Demand (Consumption),Electricity used in the Far West weather zone (Midland-Odessa / Permian Basin oil & gas country).,"1,087 to 9,462  (avg 5,459.4)",0.21
+demand_ncen_mwh,Demand - North Central Region / Dallas-Fort Worth (MWh),Demand (Consumption),Electricity used in the North Central weather zone. This is our stand-in for the Dallas-Fort Worth metroplex.,"7,439 to 29,839  (avg 14,538.3)",0.2
+demand_nrth_mwh,Demand - North Region / Wichita Falls (MWh),Demand (Consumption),Electricity used in the North weather zone (Wichita Falls area).,"300 to 3,066  (avg 1,396.7)",0.16
+demand_scen_mwh,Demand - South Central Region / Austin-San Antonio (MWh),Demand (Consumption),Electricity used in the South Central weather zone (Austin / San Antonio).,"3,924 to 16,012  (avg 8,127.4)",0.15
+demand_sout_mwh,Demand - South Region / Rio Grande Valley (MWh),Demand (Consumption),Electricity used in the South weather zone (Corpus Christi / Rio Grande Valley).,"1,860 to 7,209  (avg 4,006.0)",0.15
+demand_west_mwh,Demand - West Region / Abilene-San Angelo (MWh),Demand (Consumption),Electricity used in the West weather zone (Abilene / San Angelo).,"400 to 4,000  (avg 1,438.0)",0.15
+interchange_cen_mwh,Power Traded with Mexico (MWh),Grid Operations,Electricity ERCOT sent to (+) or received from (-) Mexico's grid (CFE/CENACE) this hour.,-409 to 412  (avg 34.4),0.17
+net_generation_mwh,"Total Generation, All Fuels (MWh)",Grid Operations,Sum of every fuel type - the total amount of electricity ERCOT produced this hour.,"27,450 to 91,117  (avg 49,955.1)",0.04
+total_interchange_mwh,Total Power Traded with Neighbors (MWh),Grid Operations,Net electricity ERCOT sent to (+) or received from (-) all neighboring grids combined.,"-1,197 to 1,162  (avg -97.9)",0.17
+demand_mwh,Total Texas Grid Demand (MWh),Demand (Consumption),Total electricity used across all of ERCOT (the whole state) this hour.,"27,449 to 91,075  (avg 50,054.4)",0.0
+interchange_swpp_mwh,Power Traded with Southwest Power Pool (MWh),Grid Operations,Electricity ERCOT sent to (+) or received from (-) the Southwest Power Pool (a neighboring U.S. grid) this hour.,-818 to 837  (avg -132.2),0.17
+day_ahead_demand_forecast_mwh,Grid Operator's Next-Day Demand Forecast (MWh),Grid Operations,"What ERCOT predicted total demand would be for this hour, published the day before.","27,872 to 91,660  (avg 50,296.6)",0.15
+timestamp_repaired,Timestamp Was Corrected (1 = Yes),Time,"Flags the ~2,644 hours whose original timestamp had a data error that we fixed during cleaning.","False, True",0.0
+timestamp_local,Timestamp (Central Time),Time,"The same hour as the UTC timestamp, converted to Texas local time (handles daylight saving automatically).",2019-05-27 01:00:00-05:00 to 2026-08-22 22:00:00-05:00,0.0
+year,Year,Time,"Calendar year, local time.","2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026",0.0
+month,Month (1-12),Time,"Calendar month, local time.","1, 10, 11, 12, 2, 3, 4, 5",0.0
+hour_local,"Hour of Day, Local Time (0-23)",Time,"The hour of day in Texas time; 0 = midnight, 17 = 5 PM.","0, 1, 10, 11, 12, 13, 14, 15",0.0
+dow_local,Day of Week (0=Monday...6=Sunday),Time,"Day of the week as a number, local time.","0, 1, 2, 3, 4, 5, 6",0.0
+is_weekend,"Is Weekend (1=Yes, 0=No)",Time,"1 if this hour falls on a Saturday or Sunday, local time.","0, 1",0.0
+season,Season,Time,"Winter (Dec-Feb), Spring (Mar-May), Summer (Jun-Aug), or Fall (Sep-Nov).","Fall, Spring, Summer, Winter",0.0
+dfw_demand_mwh,DFW Demand (MWh),Derived / Calculated,Same value as North Central demand - repeated under a clearer name since DFW is our focus.,"7,439 to 29,839  (avg 14,538.3)",0.2
+dfw_share_of_ercot,DFW Share of Total Texas Demand,Derived / Calculated,DFW demand divided by total Texas demand. 0.30 means DFW used 30% of all the electricity in Texas that hour.,0 to 0  (avg 0.3),0.2
+renewable_gen_mwh,Total Renewable Generation - Wind + Solar + Hydro (MWh),Derived / Calculated,"Wind, solar, and hydro generation added together.","377 to 52,477  (avg 15,860.7)",0.04
+renewable_share,Renewable Share of Total Demand,Derived / Calculated,Renewable generation divided by total demand. 0.42 means renewables covered 42% of that hour's demand.,0 to 1  (avg 0.3),0.04
+net_load_mwh,Demand Not Covered by Wind/Solar (MWh),Derived / Calculated,"Total demand minus wind and solar generation - the amount other power plants (mostly gas, coal, nuclear) had to cover.","6,978 to 75,208  (avg 34,242.5)",0.05
+forecast_error_mwh,Forecast Error - Predicted Minus Actual (MWh),Derived / Calculated,How far off ERCOT's forecast was. Positive = ERCOT over-predicted demand; negative = under-predicted.,"-13,350 to 28,885  (avg 259.4)",0.15
+abs_pct_error,Forecast Error (% of Actual Demand),Derived / Calculated,"The size of the forecast miss as a percentage, ignoring direction. Smaller is better.",0 to 65  (avg 2.4),0.15
